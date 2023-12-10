@@ -127,12 +127,13 @@ export default function Home() {
             <p className="p-3 text-center text-primary">
               Come, join us at Newton's for a culinary adventure that transcends
               the ordinary—a place where exceptional food, warm hospitality, and
-              family moments converge in perfect harmony. <br/> Our drink menu is more
+              family moments converge in perfect harmony. Our drink menu is more
               than a selection; it's a symphony of flavors, an ode to
               craftsmanship, and a celebration of the art of beverage curation.
               Cheers to a journey of taste and a toast to your unforgettable
               dining experience!
             </p>
+            <p className="text-center text-success"><em>Explore Our Menus</em></p>
           </div>
           <div className="col-md-5 bg-primary p-0">
             <div className="display-6 text-center">
