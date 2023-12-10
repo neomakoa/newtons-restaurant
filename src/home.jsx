@@ -147,7 +147,7 @@ export default function Home() {
           </div>
           <div className="col-md-7 bg-primary">
             <div className="display-6 pt-3 px-3 text-center text-success">
-              Locations
+              Locations & Reservations
             </div>
             <p className="p-3 text-center text-dark">
               The interior of Newton's restaurants boasts a palette of muted
