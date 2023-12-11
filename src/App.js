@@ -1,11 +1,21 @@
 import "./App.css";
+import Header from "./header";
 import Home from "./home";
-import bg from "./assets/images/ria-oZzoDW61aoM-unsplash.jpg"
+import Footer from "./footer";
+import bg from "./assets/images/ria-oZzoDW61aoM-unsplash.jpg";
 
 function App() {
   return (
-    <div style={{backgroundImage: `url(${bg})`, backgroundSize: 'contain',backgroundAttachment: "fixed",}}>
+    <div
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "contain",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <Header />
       <Home />
+      <Footer />
     </div>
   );
 }

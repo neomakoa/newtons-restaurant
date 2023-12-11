@@ -1,3 +1,4 @@
+import React from "react";
 import hero from "./assets/images/sebastian-schuppik-H7xTpvBjJS4-unsplash.jpg";
 import img1 from "./assets/images/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg";
 import img2 from "./assets/images/louis-hansel-8qT_cml7M68-unsplash.jpg";
@@ -9,83 +10,9 @@ import imga from "./assets/images/niklas-rhose-FlmXvqlD-nI-unsplash.jpg";
 import imgb from "./assets/images/tim-toomey-pe9dvM1rQkM-unsplash.jpg";
 import area1 from "./assets/images/jason-leung-poI7DelFiVA-unsplash.jpg";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-black">
-        <div className="container">
-          <a className="navbar-brand display-6 text-success" href="/">
-            Newton's
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a
-                  className="nav-link active text-white"
-                  aria-current="page"
-                  href="/"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="/">
-                  About Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="/">
-                  Menus
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <div
-                  className="nav-link dropdown-toggle text-white"
-                  href="/"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Locations
-                </div>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
       {/*hero section  */}
       <div className="container">
         <div className="row ">
@@ -112,7 +39,7 @@ export default function Home() {
               At Newton's, we believe in the power of good food to bring people
               closer. Our chefs are passionate about crafting a diverse menu
               that caters to every palate, blending global flavors with locally
-              sourced ingredients. <br/> From hearty comfort food to innovative
+              sourced ingredients. <br /> From hearty comfort food to innovative
               culinary creations, our menu is a celebration of taste and
               quality. We invite you to immerse yourself in a world where
               culinary artistry meets architectural finesse—a haven where every
@@ -133,7 +60,6 @@ export default function Home() {
               Cheers to a journey of taste and a toast to your unforgettable
               dining experience!
             </p>
-            <p className="text-center text-success"><em>Explore Our Menus</em></p>
           </div>
           <div className="col-md-5 bg-primary p-0">
             <div className="display-6 text-center">
@@ -225,9 +151,7 @@ export default function Home() {
       </div>
 
       {/* footer section */}
-      <div className="bg-black text-white py-3 display-6">
-        <div className="container">footer</div>
-      </div>
     </div>
   );
-}
+};
+export default Home;
