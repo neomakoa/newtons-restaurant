@@ -31,46 +31,19 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/">
+                <a className="nav-link text-white" href="#about-us">
                   About Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/">
-                  Menus
+                <a className="nav-link text-white" href="/menu">
+                  Menu
                 </a>
               </li>
-              <li className="nav-item dropdown">
-                <div
-                  className="nav-link dropdown-toggle text-white"
-                  href="/"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/locations">
                   Locations
-                </div>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
+                </a>
               </li>
             </ul>
           </div>
