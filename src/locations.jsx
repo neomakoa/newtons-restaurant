@@ -1,31 +1,94 @@
-import React from "react";
+import React, { useState } from "react";
 import Calendar from "react-calendar";
-
-import bg from "./assets/images/luca-bravo-8x_fFNrmeDk-unsplash.jpg";
+import { restaurantsList } from "./data";
 
 const Locations = () => {
+  const [store, setStore] = useState(0);
+
+  const handleMidrandClick = () => {
+    setStore(0);
+  };
+  const handlePtaClick = () => {
+    setStore(1);
+  };
+  const handleUmhlangaClick = () => {
+    setStore(2);
+  };
+  const handleCapetownClick = () => {
+    setStore(3);
+  };
+  const handleBloemClick = () => {
+    setStore(4);
+  };
+  const handleSunCityClick = () => {
+    setStore(5);
+  };
+
+  let restaurant = restaurantsList[store];
+
   return (
     <div className="container">
+      <div className="bg-dark">
+        <button
+          type="button"
+          class="btn btn-primary"
+          onClick={handleMidrandClick}
+        >
+          {restaurantsList[0].city}
+        </button>
+        <button type="button" class="btn btn-primary" onClick={handlePtaClick}>
+          {restaurantsList[1].city}
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onClick={handleUmhlangaClick}
+        >
+          {restaurantsList[2].city}
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onClick={handleCapetownClick}
+        >
+          {restaurantsList[3].city}
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onClick={handleBloemClick}
+        >
+          {restaurantsList[4].city}
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onClick={handleSunCityClick}
+        >
+          {restaurantsList[5].city}
+        </button>
+      </div>
+
       <div
         style={{
-          backgroundImage: `url(${bg})`,
+          backgroundImage: `url(${restaurant.bg})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           height: "70vh",
           opacity: 0.97,
-          display: "flex", 
+          display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
         <div className="display-1 text-center text-success">
-          Waterfall Corner
+          {restaurant.location}
         </div>
       </div>
       <div className="row bg-dark m-0">
         <div className="col-md-7 p-3">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.362823530499!2d28.085455671198357!3d-26.021682106128566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957218a654179d%3A0x2e759bfc2115e78d!2sWaterfall%20Corner!5e0!3m2!1sen!2sza!4v1702999535908!5m2!1sen!2sza"
+            src={restaurant.map}
             width="100%"
             height="350"
             style={{ border: 0 }}
@@ -36,9 +99,11 @@ const Locations = () => {
         </div>
         <div className="col-md-5 p-3">
           <h2 className="text-success">Contact Us</h2>
-          <h4 className="text-primary">Waterfall Corner, Midrand</h4>
-          <p className="text-primary">(011) 345 6768</p>
-          <p className="text-primary">waterfallcorner@newtons.co.za</p>
+          <h4 className="text-primary">
+            {restaurant.location}, {restaurant.city}
+          </h4>
+          <p className="text-primary">{restaurant.tel}</p>
+          <p className="text-primary">{restaurant.email}</p>
           <hr />
           <h2 className="text-success">Operating Hours</h2>
           <p className="text-primary">Monday - Sunday (09h00 - 00h00)</p>
@@ -62,7 +127,7 @@ const Locations = () => {
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">
-                    Reservation
+                    Reservation for {restaurant.location}
                   </h5>
                   <button
                     type="button"

@@ -30,11 +30,11 @@ const Header = () => {
                   Home
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link text-white" href="#about-us">
                   About Us
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a className="nav-link text-white" href="/menu">
                   Menu
