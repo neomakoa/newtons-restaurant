@@ -28,41 +28,50 @@ const Locations = () => {
 
   return (
     <div className="container">
-      <div className="bg-dark">
+      <div className="bg-dark row m-0 p-2">
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-dark text-primary col-6 col-md-2"
           onClick={handleMidrandClick}
         >
           {restaurantsList[0].city}
         </button>
-        <button type="button" class="btn btn-primary" onClick={handlePtaClick}>
-          {restaurantsList[1].city}
-        </button>
+
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
+          onClick={handlePtaClick}
+        >
+          {restaurantsList[1].city}
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handleUmhlangaClick}
         >
           {restaurantsList[2].city}
         </button>
+
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handleCapetownClick}
         >
           {restaurantsList[3].city}
         </button>
+
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handleBloemClick}
         >
           {restaurantsList[4].city}
         </button>
+
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handleSunCityClick}
         >
           {restaurantsList[5].city}

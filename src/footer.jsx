@@ -10,17 +10,24 @@ const Footer = () => {
               <a className="navbar-brand display-6 text-success" href="/">
                 Newton's
               </a>
-              <div className="row py-2 px-5">
-                <a href="/" className="col">
+              <div
+                className="py-2"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <a href="/">
                   <FaFacebook />
                 </a>
-                <a href="/" className="col">
+                <a href="/">
                   <FaInstagram />
                 </a>
-                <a href="/" className="col">
+                <a href="/">
                   <FaTwitter />
                 </a>
-                <a href="/" className="col">
+                <a href="/">
                   <FaYoutube />
                 </a>
               </div>

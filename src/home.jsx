@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import $ from "jquery";
+
 import hero from "./assets/images/sebastian-schuppik-H7xTpvBjJS4-unsplash.jpg";
 import img1 from "./assets/images/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg";
 import img2 from "./assets/images/louis-hansel-8qT_cml7M68-unsplash.jpg";
@@ -15,6 +17,16 @@ import area5 from "./assets/images/patrick-tomasso-GXXYkSwndP4-unsplash.jpg";
 import area6 from "./assets/images/qui-nguyen-cnTdKzMOBns-unsplash.jpg";
 
 const Home = () => {
+  //  useEffect(() => {
+  //   const swapDiv = () => {
+  //     if (window.matchMedia("(max-width: 600px)").matches) {
+  //       $("#menu-text").insertAfter("#menu-carousel");
+  //     }
+  //   return () => {
+  //     swapDiv;
+  //   };
+  // }, []);
+
   return (
     <div>
       {/*hero section  */}
@@ -51,7 +63,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="col-md-7 bg-dark">
+          <div className="col-md-7 bg-dark" id="menu-text">
             <div className="display-6 pt-3 px-3 text-success text-center">
               Menus
             </div>
@@ -65,7 +77,7 @@ const Home = () => {
               dining experience!
             </p>
           </div>
-          <div className="col-md-5 bg-dark p-0">
+          <div className="col-md-5 bg-dark p-0" id="menu-carousel">
             <div className="display-6 text-center">
               <div
                 id="carouselExampleControls"
@@ -147,7 +159,7 @@ const Home = () => {
                     <img src={area6} class="d-block w-100" alt="..." />
                   </div>
                 </div>
-                
+
                 <button
                   class="carousel-control-prev"
                   type="button"
@@ -191,37 +203,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-
-        {/* section 2 */}
-        {/* <div className="row bg-dark py-2">
-          <div
-            className="col-6 bg-dark"
-            style={{
-              backgroundImage: `url(${area1})`,
-              backgroundSize: "cover",
-            }}
-          >
-            <div className="display-6 text-white text-center m-4 p-5">
-              locations
-            </div>
-          </div>
-          <div
-            className="col-6 bg-dark"
-            style={{
-              backgroundImage: `url(${area1})`,
-              backgroundSize: "cover",
-            }}
-          >
-            <div className="display-6 text-white text-center m-4 p-5">
-              locations
-            </div>
-          </div>
-        </div> */}
-
-        {/* section 3 */}
       </div>
-
-      {/* footer section */}
     </div>
   );
 };
