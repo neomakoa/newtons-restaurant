@@ -31,7 +31,7 @@ const Locations = () => {
       <div className="bg-dark row m-0 p-2">
         <button
           type="button"
-          class="btn btn-dark text-primary col-6 col-md-2"
+          className="btn btn-dark text-primary col-6 col-md-2"
           onClick={handleMidrandClick}
         >
           {restaurantsList[0].city}
@@ -39,7 +39,7 @@ const Locations = () => {
 
         <button
           type="button"
-          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
+          className="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handlePtaClick}
         >
           {restaurantsList[1].city}
@@ -47,7 +47,7 @@ const Locations = () => {
 
         <button
           type="button"
-          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
+          className="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handleUmhlangaClick}
         >
           {restaurantsList[2].city}
@@ -55,7 +55,7 @@ const Locations = () => {
 
         <button
           type="button"
-          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
+          className="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handleCapetownClick}
         >
           {restaurantsList[3].city}
@@ -63,7 +63,7 @@ const Locations = () => {
 
         <button
           type="button"
-          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
+          className="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handleBloemClick}
         >
           {restaurantsList[4].city}
@@ -71,7 +71,7 @@ const Locations = () => {
 
         <button
           type="button"
-          class="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
+          className="btn btn-dark text-primary btn-border-radius-0 col-6 col-md-2"
           onClick={handleSunCityClick}
         >
           {restaurantsList[5].city}
@@ -118,7 +118,7 @@ const Locations = () => {
           <p className="text-primary">Monday - Sunday (09h00 - 00h00)</p>
           <button
             type="button"
-            class="btn btn-primary"
+            className="btn btn-primary"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
@@ -126,37 +126,37 @@ const Locations = () => {
           </button>
 
           <div
-            class="modal fade"
+            className="modal fade"
             id="exampleModal"
             tabindex="-1"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
+            <div className="modal-dialog modal-dialog-centered">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLabel">
                     Reservation for {restaurant.location}
                   </h5>
                   <button
                     type="button"
-                    class="btn-close"
+                    className="btn-close"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">
+                <div className="modal-body">
                   <Calendar />
                 </div>
-                <div class="modal-footer">
+                <div className="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     data-bs-dismiss="modal"
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
                     Submit
                   </button>
                 </div>

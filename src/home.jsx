@@ -1,21 +1,7 @@
-import React, { useEffect } from "react";
-import $ from "jquery";
+import React from "react";
+// import $ from "jquery";
 
-import hero from "./assets/images/sebastian-schuppik-H7xTpvBjJS4-unsplash.jpg";
-import img1 from "./assets/images/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg";
-import img2 from "./assets/images/louis-hansel-8qT_cml7M68-unsplash.jpg";
-import img3 from "./assets/images/lidye-1Shk_PkNkNw-unsplash.jpg";
-import img4 from "./assets/images/ash-edmonds-SSh9jI6sw-I-unsplash.jpg";
-import img5 from "./assets/images/ash-edmonds-fsI-_MRsic0-unsplash.jpg";
-import img6 from "./assets/images/david-todd-mccarty-46ht3RkmLBo-unsplash.jpg";
-import imga from "./assets/images/lasse-bergqvist-TYj7ey6xn9M-unsplash.jpg";
-import area1 from "./assets/images/jason-leung-poI7DelFiVA-unsplash.jpg";
-import area2 from "./assets/images/ivan-stern-LOLSb7m6XkU-unsplash.jpg";
-import area3 from "./assets/images/luca-bravo-8x_fFNrmeDk-unsplash.jpg";
-import area4 from "./assets/images/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg";
-import area5 from "./assets/images/patrick-tomasso-GXXYkSwndP4-unsplash.jpg";
-import area6 from "./assets/images/qui-nguyen-cnTdKzMOBns-unsplash.jpg";
-
+import { hero, chef, cities, food } from "./assets/images";
 const Home = () => {
   //  useEffect(() => {
   //   const swapDiv = () => {
@@ -44,7 +30,7 @@ const Home = () => {
         <div className="row ">
           <div className="col-md-6 bg-primary p-0">
             <div className="display-6 text-center">
-              <img src={imga} alt="steak" className="img-fluid" />
+              <img src={chef} alt="steak" className="img-fluid" />
             </div>
           </div>
           <div className="col-md-6 bg-primary" id="about-us">
@@ -77,56 +63,57 @@ const Home = () => {
               dining experience!
             </p>
           </div>
+
           <div className="col-md-5 bg-dark p-0" id="menu-carousel">
             <div className="display-6 text-center">
               <div
-                id="carouselExampleControls"
-                class="carousel slide carousel-fade"
+                id="carouselMenu"
+                className="carousel slide carousel-fade"
                 data-bs-ride="carousel"
               >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src={img1} class="d-block w-100" alt="..." />
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src={food[0]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={img2} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={food[1]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={img3} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={food[2]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={img4} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={food[3]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={img5} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={food[4]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={img6} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={food[5]} className="d-block w-100" alt="..." />
                   </div>
                 </div>
                 <button
-                  class="carousel-control-prev"
+                  className="carousel-control-prev"
                   type="button"
-                  data-bs-target="#carouselExampleControls"
+                  data-bs-target="#carouselMenu"
                   data-bs-slide="prev"
                 >
                   <span
-                    class="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span className="visually-hidden">Previous</span>
                 </button>
                 <button
-                  class="carousel-control-next"
+                  className="carousel-control-next"
                   type="button"
-                  data-bs-target="#carouselExampleControls"
+                  data-bs-target="#carouselMenu"
                   data-bs-slide="next"
                 >
                   <span
-                    class="carousel-control-next-icon"
+                    className="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span className="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
@@ -135,54 +122,54 @@ const Home = () => {
           <div className="col-md-5 bg-primary p-0">
             <div className="display-6 text-center">
               <div
-                id="carouselExampleControls"
-                class="carousel slide carousel-fade"
+                id="carouselLocations"
+                className="carousel slide carousel-fade"
                 data-bs-ride="carousel"
               >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src={area1} class="d-block w-100" alt="..." />
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src={cities[0]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={area2} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={cities[1]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={area3} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={cities[2]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={area4} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={cities[3]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={area5} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={cities[4]} className="d-block w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={area6} class="d-block w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={cities[5]} className="d-block w-100" alt="..." />
                   </div>
                 </div>
 
                 <button
-                  class="carousel-control-prev"
+                  className="carousel-control-prev"
                   type="button"
-                  data-bs-target="#carouselExampleControls"
+                  data-bs-target="#carouselLocations"
                   data-bs-slide="prev"
                 >
                   <span
-                    class="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span className="visually-hidden">Previous</span>
                 </button>
                 <button
-                  class="carousel-control-next"
+                  className="carousel-control-next"
                   type="button"
-                  data-bs-target="#carouselExampleControls"
+                  data-bs-target="#carouselLocations"
                   data-bs-slide="next"
                 >
                   <span
-                    class="carousel-control-next-icon"
+                    className="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span className="visually-hidden">Next</span>
                 </button>
               </div>
             </div>

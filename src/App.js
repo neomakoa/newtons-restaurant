@@ -5,9 +5,9 @@ import "./App.css";
 import Header from "./header";
 import Home from "./home";
 import Menu from "./menu";
-import Locations from "./locations"
+import Locations from "./locations";
 import Footer from "./footer";
-import bg from "./assets/images/ria-oZzoDW61aoM-unsplash.jpg";
+import { bg } from "./assets/images";
 
 function App() {
   return (
