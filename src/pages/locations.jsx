@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
-import { restaurantsList } from "../assets/data";
+import { restaurantsList } from "../constants/data";
 
 const Locations = () => {
   const [store, setStore] = useState(0);
