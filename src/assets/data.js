@@ -1,4 +1,4 @@
-import { cities } from "./assets/images";
+import { cities } from "./images/images";
 
 export const restaurantsList = [
   {

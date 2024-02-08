@@ -1,7 +1,7 @@
 import React from "react";
 // import $ from "jquery";
 
-import { hero, chef, cities, food } from "./assets/images";
+import { hero, chef, cities, food } from "../assets/images/images";
 const Home = () => {
   //  useEffect(() => {
   //   const swapDiv = () => {

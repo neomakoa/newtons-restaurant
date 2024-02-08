@@ -1,5 +1,5 @@
 import React from "react";
-import { menuList1, menuList2, menuList3 } from "./data";
+import { menuList1, menuList2, menuList3 } from "../assets/data";
 
 const Menu = () => {
   return (
