@@ -1,18 +1,7 @@
 import React from "react";
-// import $ from "jquery";
 
 import { hero, chef, cities, food } from "../assets/images/images";
 const Home = () => {
-  //  useEffect(() => {
-  //   const swapDiv = () => {
-  //     if (window.matchMedia("(max-width: 600px)").matches) {
-  //       $("#menu-text").insertAfter("#menu-carousel");
-  //     }
-  //   return () => {
-  //     swapDiv;
-  //   };
-  // }, []);
-
   return (
     <div>
       {/*hero section  */}
@@ -49,6 +38,7 @@ const Home = () => {
             </p>
           </div>
 
+          {/* section 2 */}
           <div className="col-md-7 bg-dark" id="menu-text">
             <div className="display-6 pt-3 px-3 text-success text-center">
               Menus
@@ -119,6 +109,7 @@ const Home = () => {
             </div>
           </div>
 
+          {/* section 3 */}
           <div className="col-md-5 bg-primary p-0">
             <div className="display-6 text-center">
               <div

@@ -97,6 +97,7 @@ const Locations = () => {
       <div className="row bg-dark m-0">
         <div className="col-md-7 p-3">
           <iframe
+            title="maps"
             src={restaurant.map}
             width="100%"
             height="350"
