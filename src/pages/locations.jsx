@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
+// import { Loader } from "@googlemaps/js-api-loader";
+import GoogleMapReact from "google-map-react";
+
 import { restaurantsList } from "../constants/data";
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const Locations = () => {
   const [store, setStore] = useState(0);
@@ -26,6 +31,35 @@ const Locations = () => {
 
   let restaurant = restaurantsList[store];
 
+  // const loader = new Loader({
+  //   apiKey: "AIzaSyBPZ5_hD6QM5YYQarC1zu_ImADwtPdLoes",
+  //   version: "weekly",
+  //   libraries: ["places"],
+  // });
+
+  // const mapOptions = {
+  //   center: {
+  //     lat: -34.397,
+  //     lng: 150.644,
+  //   },
+  //   zoom: 4,
+  // };
+  // // Promise for a specific library
+  // loader
+  //   .importLibrary("maps")
+  //   .then(({ Map }) => {
+  //     new Map(document.getElementById("map"), mapOptions);
+  //   })
+  //   .catch((e) => {
+  //     // do something
+  //   });
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
   return (
     <div className="container">
       <div className="bg-dark row m-0 p-2">
@@ -96,7 +130,22 @@ const Locations = () => {
       </div>
       <div className="row bg-dark m-0">
         <div className="col-md-7 p-3">
-          <iframe
+          <GoogleMapReact
+            bootstrapURLKeys={{ key: "AIzaSyBPZ5_hD6QM5YYQarC1zu_ImADwtPdLoes" }}
+            defaultCenter={defaultProps.center}
+            defaultZoom={15}
+          >
+            <AnyReactComponent
+              lat={59.955413}
+              lng={30.337844}
+              text="My Marker"
+            />
+          </GoogleMapReact>
+          {/* <div
+            id="map"
+            style={{ border: 0, height: "100%", width: "100%" }}
+          ></div> */}
+          {/* <iframe
             title="maps"
             src={restaurant.map}
             width="100%"
@@ -105,7 +154,7 @@ const Locations = () => {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-          />
+          /> */}
         </div>
         <div className="col-md-5 p-3">
           <h2 className="text-success">Contact Us</h2>
@@ -129,7 +178,7 @@ const Locations = () => {
           <div
             className="modal fade"
             id="exampleModal"
-            tabindex="-1"
+            tabIndex="-1"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >

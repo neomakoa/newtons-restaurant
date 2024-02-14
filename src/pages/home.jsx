@@ -3,7 +3,7 @@ import React from "react";
 import { hero, chef, cities, food } from "../assets/images/images";
 const Home = () => {
   return (
-    <div>
+    <div data-bs-spy="scroll" data-bs-target=".navbar">
       {/*hero section  */}
       <div className="container">
         <div className="row ">

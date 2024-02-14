@@ -25,16 +25,12 @@ const Header = () => {
                 <a
                   className="nav-link active text-white"
                   aria-current="page"
-                  href="/"
+                  href="/#about-us"
                 >
-                  Home
-                </a>
-              </li>
-              {/* <li className="nav-item">
-                <a className="nav-link text-white" href="#about-us">
                   About Us
                 </a>
-              </li> */}
+              </li>
+             
               <li className="nav-item">
                 <a className="nav-link text-white" href="/menu">
                   Menu
