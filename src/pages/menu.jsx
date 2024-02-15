@@ -9,7 +9,7 @@ const Menu = () => {
           <>
             <h2 className="text-success">{menu.title}</h2>
             {menu.items.map((menuItem) => (
-              <div>
+              <div className="menu-items">
                 <h4>{menuItem.item}</h4>
                 <p>{menuItem.ingredients}</p>
               </div>
@@ -23,7 +23,7 @@ const Menu = () => {
           <>
             <h2 className="text-success">{menu.title}</h2>
             {menu.items.map((menuItem) => (
-              <div>
+              <div className="menu-items">
                 <h4>{menuItem.item}</h4>
                 <p>{menuItem.ingredients}</p>
               </div>
@@ -37,13 +37,12 @@ const Menu = () => {
           <>
             <h2 className="text-success">{menu.title}</h2>
             {menu.items.map((menuItem) => (
-              <>
+              <div className="menu-items">
                 <h4>{menuItem.item}</h4>
                 <p>{menuItem.ingredients}</p>
-                {menuItem.platter && menuItem.platter.map((option) => (
-                      <li>{option}</li>
-                ))}
-              </>
+                {menuItem.platter &&
+                  menuItem.platter.map((option) => <li>{option}</li>)}
+              </div>
             ))}
           </>
         ))}

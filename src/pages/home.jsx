@@ -63,6 +63,7 @@ const Home = () => {
               >
                 <div className="carousel-inner">
                   <div className="carousel-item active">
+                    {/* Map does not work appropriately due to Bootstrap carousel */}
                     <img src={food[0]} className="d-block w-100" alt="..." />
                   </div>
                   <div className="carousel-item">
@@ -119,6 +120,7 @@ const Home = () => {
               >
                 <div className="carousel-inner">
                   <div className="carousel-item active">
+                    {/* Map does not work appropriately due to Bootstrap carousel */}
                     <img src={cities[0]} className="d-block w-100" alt="..." />
                   </div>
                   <div className="carousel-item">

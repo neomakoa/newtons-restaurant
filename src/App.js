@@ -7,17 +7,10 @@ import Home from "./pages/home";
 import Menu from "./pages/menu";
 import Locations from "./pages/locations";
 import Footer from "./components/footer";
-import { bg } from "./assets/images/images";
 
 function App() {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: "contain",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <div className="wallpaper">
       <Header />
       <Router>
         <Routes>

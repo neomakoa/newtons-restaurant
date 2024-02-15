@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
 .display-1,
 .display-6,
 h2 {
@@ -33,4 +32,13 @@ body {
 
 .carousel-item img {
   aspect-ratio: 9/6;
+}
+.menu-items {
+  display: inline-block;
+}
+
+.wallpaper {
+  background-image: url("https://images.unsplash.com/photo-1543751416-705d3e34d02a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwNzMwMzM1OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080");
+  background-size: contain;
+  background-attachment: fixed;
 }
