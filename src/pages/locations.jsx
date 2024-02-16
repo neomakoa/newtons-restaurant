@@ -4,7 +4,7 @@ import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
 
 import { restaurantsList } from "../constants/data";
 
-const mapsKey = "AIzaSyBPZ5_hD6QM5YYQarC1zu_ImADwtPdLoes";
+const mapKey = process.env.REACT_APP_MAP_API_KEY;
 
 const Locations = () => {
   const [store, setStore] = useState(0);
@@ -83,37 +83,34 @@ const Locations = () => {
       </div>
 
       <div
+      className="locationImg"
         style={{
           backgroundImage: `url(${restaurant.bg})`,
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-          height: "70vh",
-          opacity: 0.97,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          
         }}
       >
-        <div className="display-1 text-center text-success">
+        <div className="display-1 text-center text-secondary">
           {restaurant.location}
         </div>
       </div>
 
       <div className="row bg-dark m-0">
         <div className="col-md-7 p-3">
-          {/* Requires Google Cloud Subscription */}
-          <APIProvider apiKey={mapsKey}>
+          {/* Requires Google Cloud Subscription. iframe not suitable. */}
+          <APIProvider apiKey={mapKey}>
             <div style={{ height: "350px", width: "100%" }}>
               <Map
-                defaultZoom={16}
-                defaultCenter={restaurant.coordinates}
+                defaultZoom={15}
+                // defaultCenter={restaurant.coordinates}  // Map does not change location on click, after .env was added.
+                center={restaurant.coordinates}
+                
                 mapId="8fba7d4d171e3568"
               >
                 <AdvancedMarker position={restaurant.coordinates} />
               </Map>
 
               {/* 
-            // Creates multiple cookie sessions, used api instead
+            // Creates multiple cookie sessions, used api instead.
             <iframe
             title="maps"
             src={restaurant.map}
@@ -130,14 +127,14 @@ const Locations = () => {
         </div>
 
         <div className="col-md-5 p-3">
-          <h2 className="text-success">Contact Us</h2>
+          <h2 className="text-secondary">Contact Us</h2>
           <h4 className="text-primary">
             {restaurant.location}, {restaurant.city}
           </h4>
           <p className="text-primary">{restaurant.tel}</p>
           <p className="text-primary">{restaurant.email}</p>
           <hr />
-          <h2 className="text-success">Operating Hours</h2>
+          <h2 className="text-secondary">Operating Hours</h2>
           <p className="text-primary">Monday - Sunday (09h00 - 00h00)</p>
           <button
             type="button"
@@ -174,7 +171,7 @@ const Locations = () => {
                 <div className="modal-footer">
                   <button
                     type="button"
-                    className="btn btn-secondary"
+                    className="btn btn-primary"
                     data-bs-dismiss="modal"
                   >
                     Close

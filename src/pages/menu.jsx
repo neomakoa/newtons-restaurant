@@ -7,7 +7,7 @@ const Menu = () => {
       <div className="menu-content bg-dark text-primary p-3 my-2">
         {menuList1.map((menu) => (
           <>
-            <h2 className="text-success">{menu.title}</h2>
+            <h2 className="text-secondary">{menu.title}</h2>
             {menu.items.map((menuItem) => (
               <div className="menu-items">
                 <h4>{menuItem.item}</h4>
@@ -21,7 +21,7 @@ const Menu = () => {
       <div className="menu-content bg-dark text-primary p-3 my-2">
         {menuList2.map((menu) => (
           <>
-            <h2 className="text-success">{menu.title}</h2>
+            <h2 className="text-secondary">{menu.title}</h2>
             {menu.items.map((menuItem) => (
               <div className="menu-items">
                 <h4>{menuItem.item}</h4>
@@ -35,7 +35,7 @@ const Menu = () => {
       <div className="menu-content bg-dark text-primary p-3 my-2">
         {menuList3.map((menu) => (
           <>
-            <h2 className="text-success">{menu.title}</h2>
+            <h2 className="text-secondary">{menu.title}</h2>
             {menu.items.map((menuItem) => (
               <div className="menu-items">
                 <h4>{menuItem.item}</h4>
@@ -46,6 +46,7 @@ const Menu = () => {
             ))}
           </>
         ))}
+        <h1 className="text-secondary">End of Menu</h1>
       </div>
     </div>
   );

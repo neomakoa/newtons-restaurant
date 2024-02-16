@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-4">
-              <a className="navbar-brand display-6 text-success" href="/">
+              <a className="navbar-brand display-6 text-secondary" href="/">
                 Newton's
               </a>
               <div

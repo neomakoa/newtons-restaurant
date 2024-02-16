@@ -9,21 +9,21 @@ const Home = () => {
         <div className="row ">
           <div className="col-12 bg-dark p-0">
             <img src={hero} alt="steak" className="img-fluid" />
-            <div className="display-1 text-center text-success my-2 p-5">
+            <div className="display-1 text-center text-secondary my-2 p-5">
               Welcome to Newton's
             </div>
           </div>
         </div>
 
         {/* section 1 */}
-        <div className="row ">
+        <div className="row">
           <div className="col-md-6 bg-primary p-0">
             <div className="display-6 text-center">
               <img src={chef} alt="steak" className="img-fluid" />
             </div>
           </div>
           <div className="col-md-6 bg-primary" id="about-us">
-            <div className="display-6 pt-3 px-3 text-center text-success">
+            <div className="display-6 pt-3 px-3 text-center text-secondary">
               About Us
             </div>
             <p className="p-3 text-center text-dark">
@@ -40,7 +40,7 @@ const Home = () => {
 
           {/* section 2 */}
           <div className="col-md-7 bg-dark" id="menu-text">
-            <div className="display-6 pt-3 px-3 text-success text-center">
+            <div className="display-6 pt-3 px-3 text-secondary text-center">
               Menus
             </div>
             <p className="p-3 text-center text-primary">
@@ -168,7 +168,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-7 bg-primary">
-            <div className="display-6 pt-3 px-3 text-center text-success">
+            <div className="display-6 pt-3 px-3 text-center text-secondary">
               Locations & Reservations
             </div>
             <p className="p-3 text-center text-dark">
