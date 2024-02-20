@@ -1,34 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
+import { motion } from "framer-motion";
 
 import { restaurantsList } from "../constants/data";
 
 const mapKey = process.env.REACT_APP_MAP_API_KEY;
 
 const Locations = () => {
-  const [store, setStore] = useState(0);
+  const [area, setArea] = useState(0);
 
   const handleMidrandClick = () => {
-    setStore(0);
+    setArea(0);
   };
   const handlePtaClick = () => {
-    setStore(1);
+    setArea(1);
   };
   const handleUmhlangaClick = () => {
-    setStore(2);
+    setArea(2);
   };
   const handleCapetownClick = () => {
-    setStore(3);
+    setArea(3);
   };
   const handleBloemClick = () => {
-    setStore(4);
+    setArea(4);
   };
   const handleSunCityClick = () => {
-    setStore(5);
+    setArea(5);
   };
 
-  let restaurant = restaurantsList[store];
+  let restaurant = restaurantsList[area];
 
   return (
     <div className="container">
@@ -81,18 +82,19 @@ const Locations = () => {
           {restaurantsList[5].city}
         </button>
       </div>
-
-      <div
-      className="locationImg"
+      <motion.div
+       initial={{ opacity: 0 }}
+       animate={{ opacity: 1 }}
+       transition={{ duration: 0.5 }}
+        className="locationImg"
         style={{
           backgroundImage: `url(${restaurant.bg})`,
-          
         }}
       >
         <div className="display-1 text-center text-secondary">
           {restaurant.location}
         </div>
-      </div>
+      </motion.div>
 
       <div className="row bg-dark m-0">
         <div className="col-md-7 p-3">
@@ -103,25 +105,10 @@ const Locations = () => {
                 defaultZoom={15}
                 // defaultCenter={restaurant.coordinates}  // Map does not change location on click, after .env was added.
                 center={restaurant.coordinates}
-                
                 mapId="8fba7d4d171e3568"
               >
                 <AdvancedMarker position={restaurant.coordinates} />
               </Map>
-
-              {/* 
-            // Creates multiple cookie sessions, used api instead.
-            <iframe
-            title="maps"
-            src={restaurant.map}
-            width="100%"
-            height="350"
-            style={{ border: 0 }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          /> 
-          */}
             </div>
           </APIProvider>
         </div>

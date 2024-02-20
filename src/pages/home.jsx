@@ -39,19 +39,22 @@ const Home = () => {
           </div>
 
           {/* section 2 */}
+
           <div className="col-md-7 bg-dark" id="menu-text">
-            <div className="display-6 pt-3 px-3 text-secondary text-center">
-              Menus
-            </div>
-            <p className="p-3 text-center text-primary">
-              Come, join us at Newton's for a culinary adventure that transcends
-              the ordinary—a place where exceptional food, warm hospitality, and
-              family moments converge in perfect harmony. Our drink menu is more
-              than a selection; it's a symphony of flavors, an ode to
-              craftsmanship, and a celebration of the art of beverage curation.
-              Cheers to a journey of taste and a toast to your unforgettable
-              dining experience!
-            </p>
+            <a href="menu">
+              <div className="display-6 pt-3 px-3 text-secondary text-center">
+                Menu
+              </div>
+              <p className="p-3 text-center text-primary">
+                Come, join us at Newton's for a culinary adventure that
+                transcends the ordinary—a place where exceptional food, warm
+                hospitality, and family moments converge in perfect harmony. Our
+                drink menu is more than a selection; it's a symphony of flavors,
+                an ode to craftsmanship, and a celebration of the art of
+                beverage curation. Cheers to a journey of taste and a toast to
+                your unforgettable dining experience!
+              </p>
+            </a>
           </div>
 
           <div className="col-md-5 bg-dark p-0" id="menu-carousel">
@@ -168,19 +171,22 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-7 bg-primary">
-            <div className="display-6 pt-3 px-3 text-center text-secondary">
-              Locations & Reservations
-            </div>
-            <p className="p-3 text-center text-dark">
-              The interior of Newton's restaurants boasts a palette of muted
-              tones, soft lighting, and tasteful decor that exudes understated
-              opulence. From the plush upholstery to the carefully chosen
-              artwork adorning the walls, each element has been selected to
-              create a harmonious visual symphony. Enhancing the ambiance is the
-              soft melody of live music, carefully curated to complement the
-              dining experience without overpowering conversation. Our live
-              musicians add an extra layer of sophistication to your evening.
-            </p>
+            <a href="locations">
+              <div className="display-6 pt-3 px-3 text-center text-secondary">
+                Locations & Reservations
+              </div>
+              <p className="p-3 text-center text-dark">
+                The interior of Newton's restaurants boasts a palette of muted
+                tones, soft lighting, and tasteful decor that exudes understated
+                opulence. From the plush upholstery to the carefully chosen
+                artwork adorning the walls, each element has been selected to
+                create a harmonious visual symphony. Enhancing the ambiance is
+                the soft melody of live music, carefully curated to complement
+                the dining experience without overpowering conversation. Our
+                live musicians add an extra layer of sophistication to your
+                evening.
+              </p>
+            </a>
           </div>
         </div>
       </div>
