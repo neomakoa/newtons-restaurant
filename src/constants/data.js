@@ -1,7 +1,8 @@
-import { cities } from "../assets/images/images";
+import { cities } from "../assets/images";
 
 export const restaurantsList = [
   {
+    id: 1,
     location: "Waterfall Corner",
     city: "Midrand",
     tel: "(011) 345 6768",
@@ -11,6 +12,7 @@ export const restaurantsList = [
     coordinates: { lat: -26.021513434859585, lng: 28.09014419690288 },
   },
   {
+    id: 2,
     location: "Menlyn Park",
     city: "Pretoria",
     tel: "(011) 345 4568",
@@ -20,6 +22,7 @@ export const restaurantsList = [
     coordinates: { lat: -25.78253473228365, lng: 28.274767695037106 },
   },
   {
+    id: 3,
     location: "Oceans Mall",
     city: "Umhlanga",
     tel: "(011) 345 1068",
@@ -29,6 +32,7 @@ export const restaurantsList = [
     coordinates: { lat: -29.7246771816699, lng: 31.08562625290736 },
   },
   {
+    id: 4,
     location: "V&A Waterfront",
     city: "Cape Town",
     tel: "(011) 345 2968",
@@ -38,6 +42,7 @@ export const restaurantsList = [
     coordinates: { lat: -33.90733268437153, lng: 18.41990450841291 },
   },
   {
+    id: 5,
     location: "Mimosa Mall",
     city: "Bloemfontein",
     tel: "(011) 345 3868",
@@ -47,6 +52,7 @@ export const restaurantsList = [
     coordinates: { lat: -29.108754043418127, lng: 26.20221173981232 },
   },
   {
+    id: 6,
     location: "Sun Central",
     city: "Sun City",
     tel: "(011) 345 4768",
@@ -62,42 +68,52 @@ export const menuList1 = [
     title: "Starters",
     items: [
       {
+        id: 1,
         item: "Grilled Shrimp Skewers | 175",
         ingredients: "Jumbo shrimp, garlic, lemon, herbs.",
       },
       {
+        id: 2,
         item: "Bacon-Wrapped Jalapeño Poppers | 98",
         ingredients: "Jalapeños, cream cheese, bacon, spices.",
       },
       {
+        id: 3,
         item: "Smoked Chicken Wings | 90",
         ingredients: "Chicken wings, hickory smoke, BBQ glaze.",
       },
       {
+        id: 4,
         item: "Grilled Portobello Mushrooms | 124",
         ingredients: "Portobello mushrooms, balsamic glaze, thyme.",
       },
       {
+        id: 5,
         item: "BBQ Brisket Sliders | 100",
         ingredients: "Slow-cooked brisket, slider buns, coleslaw.",
       },
       {
+        id: 6,
         item: "Charred Corn Salad | 145",
         ingredients: "Grilled corn, cherry tomatoes, cilantro, lime.",
       },
       {
+        id: 8,
         item: "Fire-Grilled Artichoke Hearts | 132",
         ingredients: "Artichoke hearts, garlic butter, Parmesan.",
       },
       {
+        id: 9,
         item: "Spicy BBQ Shrimp Tacos | 160",
         ingredients: "Spicy shrimp, avocado, slaw, chipotle mayo.",
       },
       {
+        id: 10,
         item: "Grilled Halloumi Skewers | 187",
         ingredients: "Halloumi cheese, bell peppers, zucchini.",
       },
       {
+        id: 11,
         item: "Smoked Salmon Crostini | 137",
         ingredients: "Smoked salmon, cream cheese, capers, dill.",
       },
@@ -107,74 +123,92 @@ export const menuList1 = [
     title: "Mains Meals",
     items: [
       {
+        id: 12,
         item: "Signature BBQ Ribs | 257",
         ingredients: "Baby back ribs, house BBQ sauce, coleslaw.",
       },
       {
+        id: 13,
         item: "Tuscan Grilled Chicken | 325",
         ingredients: "Herb-marinated chicken, sun-dried tomatoes, olives.",
       },
       {
+        id: 14,
         item: "Grilled Swordfish Steak | 420",
         ingredients: "Swordfish steak, lemon herb marinade.",
       },
       {
+        id: 15,
         item: "Chimichurri Steak | 435",
         ingredients: "Grilled sirloin, chimichurri sauce, roasted potatoes.",
       },
       {
+        id: 16,
         item: "Maple Glazed Cedar Plank Salmon | 298",
         ingredients: "Cedar plank salmon, maple glaze, roasted vegetables.",
       },
       {
+        id: 17,
         item: "Vegetarian Grilled Portobello Burger | 192",
         ingredients: "Grilled portobello, red pepper, goat cheese.",
       },
       {
+        id: 18,
         item: "Smoked Pulled Pork Sandwich | 336",
         ingredients: "Slow-smoked pulled pork, BBQ sauce, pickles.",
       },
       {
+        id: 19,
         item: "Grilled Vegetable Kabobs | 329",
         ingredients: "Mixed vegetables, balsamic marinade.",
       },
       {
+        id: 20,
         item: "Cajun Grilled Shrimp Pasta | 287",
         ingredients: "Cajun-spiced shrimp, linguine, creamy garlic sauce.",
       },
       {
+        id: 21,
         item: "BBQ Jackfruit Tacos (Vegetarian) | 225",
         ingredients: "BBQ jackfruit, tortillas, avocado, lime.",
       },
       {
+        id: 22,
         item: "Cherry Balsamic Glazed Quail | 325",
         ingredients: "Grilled quail, cherry balsamic glaze, wild rice.",
       },
       {
+        id: 23,
         item: "Garlic Butter Lobster Tail | 179",
         ingredients: "Lobster tail, garlic butter, parsley.",
       },
       {
+        id: 24,
         item: "Grilled Lamb Chops | 415",
         ingredients: "Marinated lamb chops, rosemary, red wine reduction.",
       },
       {
+        id: 25,
         item: "Honey Mustard Glazed Chicken Thighs | 265",
         ingredients: "Chicken thighs, honey mustard glaze.",
       },
       {
+        id: 26,
         item: "Grilled Vegetable Lasagna (Vegetarian) | 250",
         ingredients: "Grilled veggies, lasagna noodles, marinara, mozzarella.",
       },
       {
+        id: 27,
         item: "Teriyaki Glazed Grilled Tofu (Vegan) | 262",
         ingredients: "Tofu, teriyaki glaze, pineapple.",
       },
       {
+        id: 28,
         item: "Kansas City BBQ Burnt Ends | 236",
         ingredients: "Burnt ends, Kansas City BBQ sauce.",
       },
       {
+        id: 29,
         item: "Surf and Turf Platter | 345",
         ingredients: "Filet mignon, lobster tail, garlic herb butter.",
       },
@@ -186,50 +220,62 @@ export const menuList2 = [
     title: "Desserts",
     items: [
       {
+        id: 30,
         item: "Grilled Pineapple with Vanilla Ice Cream | 145",
         ingredients: "Fresh pineapple, vanilla ice cream, caramel drizzle.",
       },
       {
+        id: 31,
         item: "S'mores Fondue | 163",
         ingredients: "Chocolate, marshmallows, graham crackers.",
       },
       {
+        id: 32,
         item: "Grilled Peach Cobbler | 134",
         ingredients: "Grilled peaches, cinnamon, streusel topping.",
       },
       {
+        id: 33,
         item: "Chocolate Espresso Grilled Banana Boat | 169",
         ingredients: "Bananas, chocolate chips, espresso glaze.",
       },
       {
+        id: 34,
         item: "Grilled Berry Shortcakes | 155",
         ingredients: "Mixed berries, shortcakes, whipped cream.",
       },
       {
+        id: 35,
         item: "Smoked Chocolate Mousse | 154",
         ingredients: "Smoked chocolate, whipped cream.",
       },
       {
+        id: 36,
         item: "Grilled Apple Tart | 176",
         ingredients: "Sliced apples, puff pastry, cinnamon.",
       },
       {
+        id: 37,
         item: "Caramelized Pineapple Upside-Down Cake | 197",
         ingredients: "Caramelized pineapple, vanilla cake.",
       },
       {
+        id: 38,
         item: "Grilled Mango Sorbet | 190",
         ingredients: "Grilled mango, coconut milk, lime.",
       },
       {
+        id: 39,
         item: "Bourbon Pecan Pie | 172",
         ingredients: "Pecans, bourbon-infused filling, flaky crust.",
       },
       {
+        id: 40,
         item: "Grilled Lemon Pound Cake | 156",
         ingredients: "Grilled lemon slices, pound cake, citrus glaze.",
       },
       {
+        id: 41,
         item: "Raspberry Balsamic Grilled Peaches | 192",
         ingredients: "Grilled peaches, raspberry balsamic reduction.",
       },
@@ -239,82 +285,102 @@ export const menuList2 = [
     title: "Drinks",
     items: [
       {
+        id: 42,
         item: "Smoky Bourbon Maple Smash | 132",
         ingredients: "Bourbon, maple syrup, smoked rosemary.",
       },
       {
+        id: 43,
         item: "Grilled Pineapple Mojito | 174",
         ingredients: "Pineapple, mint, rum.",
       },
       {
+        id: 44,
         item: "Blackberry Basil Lemonade | 132",
         ingredients: "Blackberries, basil, fresh lemonade.",
       },
       {
+        id: 45,
         item: "Cucumber Jalapeño Margarita | 162",
         ingredients: "Cucumber, jalapeño, tequila, lime.",
       },
       {
+        id: 46,
         item: "Charred Orange Old Fashioned | 132",
         ingredients: "Charred orange peel, bourbon, bitters.",
       },
       {
+        id: 47,
         item: "Grilled Watermelon Sparkler | 174",
         ingredients: "Grilled watermelon, sparkling water, vodka.",
       },
       {
+        id: 48,
         item: "Minty Grilled Peach Iced Tea | 162",
         ingredients: "Grilled peaches, mint, black tea.",
       },
       {
+        id: 49,
         item: "Blueberry Lavender Gin Fizz | 174",
         ingredients: "Blueberries, lavender, gin, soda.",
       },
       {
+        id: 50,
         item: "Spiced Apple Rum Punch | 162",
         ingredients: "Spiced apple cider, dark rum, cinnamon.",
       },
       {
+        id: 51,
         item: "Coconut Pineapple Rum Splash | 132",
         ingredients: "Coconut water, pineapple juice, white rum.",
       },
       {
+        id: 52,
         item: "Grilled Grapefruit Paloma | 174",
         ingredients: "Grilled grapefruit, tequila, grapefruit soda.",
       },
       {
+        id: 53,
         item: "Vanilla Chai Espresso Martini | 132",
         ingredients: "Vanilla chai syrup, espresso, vodka.",
       },
       {
+        id: 54,
         item: "Strawberry Basil Smash | 156",
         ingredients: "Strawberries, basil, gin.",
       },
       {
+        id: 55,
         item: "Cayenne Mango Margarita | 156",
         ingredients: "Cayenne-infused mango puree, tequila, lime.",
       },
       {
+        id: 56,
         item: "Ginger Lemongrass Sparkling Mocktail | 224",
         ingredients: "Ginger, lemongrass, sparkling water.",
       },
       {
+        id: 57,
         item: "Pomegranate Rosemary Spritzer | 156",
         ingredients: "Pomegranate juice, rosemary, soda.",
       },
       {
+        id: 58,
         item: "Hibiscus Mint Iced Tea | 224",
         ingredients: "Hibiscus tea, fresh mint, agave.",
       },
       {
+        id: 59,
         item: "Coconut Lavender Lemon Fizz | 156",
         ingredients: "Coconut milk, lavender syrup, lemon, soda.",
       },
       {
+        id: 60,
         item: "Grilled Peach Basil Sangria | 224",
         ingredients: "Grilled peaches, basil, white wine.",
       },
       {
+        id: 61,
         item: "Cherry Vanilla Bourbon Smash | 156",
         ingredients: "Cherries, vanilla, bourbon, soda.",
       },
@@ -326,6 +392,7 @@ export const menuList3 = [
     title: "Sushi Platters",
     items: [
       {
+        id: 62,
         item: "Assorted Nigiri Platter | 417",
         ingredients:
           "Chef's selection of traditional nigiri sushi showcasing fresh fish and seafood atop hand-pressed rice.",
@@ -338,6 +405,7 @@ export const menuList3 = [
         ],
       },
       {
+        id: 63,
         item: "Sashimi Delight Platter | 524",
         ingredients:
           "An exquisite selection of sashimi featuring thinly sliced fresh fish, artistically arranged.",
@@ -350,6 +418,7 @@ export const menuList3 = [
         ],
       },
       {
+        id: 64,
         item: "Signature Maki Roll Platter | 545",
         ingredients:
           "Innovative maki rolls with a fusion of flavors and textures,hand-rolled to perfection.",
@@ -361,6 +430,7 @@ export const menuList3 = [
         ],
       },
       {
+        id: 65,
         item: "Vegetarian Sushi Sampler | 618",
         ingredients:
           "A delightful selection of vegetarian sushi options, perfect for those seeking a plant-based experience.",
@@ -378,21 +448,25 @@ export const menuList3 = [
     title: "Sushi Platter Additions (Optional)",
     items: [
       {
+        id: 66,
         item: "Soy Sauce, Pickled Ginger, and Wasabi | 90",
         ingredients:
           "Accompany your sushi platters with traditional soy sauce, pickled ginger, and wasabi for an authentic experience.",
       },
       {
+        id: 67,
         item: "Edamame Pods | 78",
         ingredients:
           "Steamed soybean pods lightly salted, a refreshing and nutritious addition to your sushi feast.",
       },
       {
+        id: 68,
         item: "Miso Soup | 124",
         ingredients:
           "A classic Japanese miso soup with tofu, seaweed, and green onions to start your meal.",
       },
       {
+        id: 69,
         item: "Green Tea Ice Cream | 160",
         ingredients:
           "Conclude your dining experience with a scoop of green tea ice cream, a perfect balance of sweet and earthy flavors.",

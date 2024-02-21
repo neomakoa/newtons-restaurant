@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import "./App.css";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Home from "./pages/home";
 import Menu from "./pages/menu";
 import Locations from "./pages/locations";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { hero, chef, cities, food } from "../assets/images/images";
+import { hero, chef, cities, food } from "../../assets/images";
 const Home = () => {
   return (
     <div data-bs-spy="scroll" data-bs-target=".navbar">
