@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import { restaurantsList } from "../../constants/data";
+import restaurantsList from "../../data/restaurantsList";
 import RestaurantMap from "../../components/RestaurantMap";
 import Button from "../../components/Button";
 import RestaurantDetails from "../../components/RestaurantDetails";
@@ -43,9 +43,7 @@ const Locations = () => {
             center={restaurant.coordinates}
             position={restaurant.coordinates}
           />
-          <span style={{ color: "slategray", fontSize: "15px" }}>
-            *Requires Google Cloud Subscription. iframe not suitable.
-          </span>
+          <span>*Requires Google Cloud Subscription. iframe not suitable.</span>
         </div>
         <div className="col-md-5 p-3">
           <RestaurantDetails

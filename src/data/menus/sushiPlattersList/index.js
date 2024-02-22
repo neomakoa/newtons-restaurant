@@ -1,4 +1,4 @@
- const sushiPlattersList = {
+const sushiPlattersList = {
   title: "Sushi Platters",
   items: [
     {
@@ -7,11 +7,11 @@
       ingredients:
         "Chef's selection of traditional nigiri sushi showcasing fresh fish and seafood atop hand-pressed rice.",
       platter: [
-        "Salmon Nigiri",
-        "Tuna Nigiri",
-        "Yellowtail Nigiri",
-        "Shrimp Nigiri",
-        "Tamago (Sweet Japanese omelet) Nigiri",
+        { id: 1, item: "Salmon Nigiri" },
+        { id: 2, item: "Tuna Nigiri" },
+        { id: 3, item: "Yellowtail Nigiri" },
+        { id: 4, item: "Shrimp Nigiri" },
+        { id: 5, item: "Tamago (Sweet Japanese omelet) Nigiri" },
       ],
     },
     {
@@ -20,11 +20,11 @@
       ingredients:
         "An exquisite selection of sashimi featuring thinly sliced fresh fish, artistically arranged.",
       platter: [
-        "Sliced Tuna",
-        "Salmon Sashimi",
-        "Whitefish Sashimi",
-        "Scallop Sashimi",
-        "Octopus Sashimi",
+        { id: 1, item: "Sliced Tuna" },
+        { id: 2, item: "Salmon Sashimi" },
+        { id: 3, item: "Whitefish Sashimi" },
+        { id: 4, item: "Scallop Sashimi" },
+        { id: 5, item: "Octopus Sashimi" },
       ],
     },
     {
@@ -33,10 +33,19 @@
       ingredients:
         "Innovative maki rolls with a fusion of flavors and textures,hand-rolled to perfection.",
       platter: [
-        "Dragon Roll: Eel, avocado, cucumber, and tobiko.",
-        "Spicy Tuna Roll: Tuna, spicy mayo, cucumber, and scallions.",
-        "Rainbow Roll: Crab, avocado, and assorted sashimi on top.",
-        "Volcano Roll: Baked scallops, spicy mayo, and avocado.",
+        { id: 1, item: "Dragon Roll: Eel, avocado, cucumber, and tobiko." },
+        {
+          id: 2,
+          item: "Spicy Tuna Roll: Tuna, spicy mayo, cucumber, and scallions.",
+        },
+        {
+          id: 3,
+          item: "Rainbow Roll: Crab, avocado, and assorted sashimi on top.",
+        },
+        {
+          id: 4,
+          item: "Volcano Roll: Baked scallops, spicy mayo, and avocado.",
+        },
       ],
     },
     {
@@ -45,11 +54,14 @@
       ingredients:
         "A delightful selection of vegetarian sushi options, perfect for those seeking a plant-based experience.",
       platter: [
-        "Avocado and Cucumber Roll",
-        "Sweet Potato Tempura Roll",
-        "Vegetable Dragon Roll",
-        "Mango and Asparagus Nigiri",
-        "Inari Sushi (Sweet tofu pouch filled with sushi rice)",
+        { id: 1, item: "Avocado and Cucumber Roll" },
+        { id: 2, item: "Sweet Potato Tempura Roll" },
+        { id: 3, item: "Vegetable Dragon Roll" },
+        { id: 4, item: "Mango and Asparagus Nigiri" },
+        {
+          id: 5,
+          item: "Inari Sushi (Sweet tofu pouch filled with sushi rice)",
+        },
       ],
     },
   ],

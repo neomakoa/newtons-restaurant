@@ -1,53 +1,22 @@
 import React from "react";
-import { menuList1, menuList2, menuList3 } from "../../constants/data";
+import MenuArray from "../../components/MenuArray";
+import drinksList from "../../data/menus/drinksList";
+import startersList from "../../data/menus/startersList";
+import mainMealsList from "../../data/menus/mainMealsList";
+import dessertsList from "../../data/menus/dessertsList";
+import sushiAddOnsList from "../../data/menus/sushiAddOnsList";
+import sushiPlattersList from "../../data/menus/sushiPlattersList";
+import NestedMenuArray from "../../components/NestedMenuArray";
 
 const Menu = () => {
   return (
     <div className="container">
-      <div className="menu-content bg-dark text-primary p-3 my-2">
-        {menuList1.map((menu) => (
-          <div key={menu.title}>
-            <h2 className="text-secondary">{menu.title}</h2>
-            {menu.items.map((menuItem) => (
-              <div key={menuItem.id} className="menu-items">
-                <h4>{menuItem.item}</h4>
-                <p>{menuItem.ingredients}</p>
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
-
-      <div className="menu-content bg-dark text-primary p-3 my-2">
-        {menuList2.map((menu) => (
-          <div key={menu.title}>
-            <h2 className="text-secondary">{menu.title}</h2>
-            {menu.items.map((menuItem) => (
-              <div key={menuItem.id} className="menu-items">
-                <h4>{menuItem.item}</h4>
-                <p>{menuItem.ingredients}</p>
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
-
-      <div className="menu-content bg-dark text-primary p-3 my-2">
-        {menuList3.map((menu) => (
-          <div key={menu.title}>
-            <h2 className="text-secondary">{menu.title}</h2>
-            {menu.items.map((menuItem) => (
-              <div key={menuItem.id} className="menu-items">
-                <h4>{menuItem.item}</h4>
-                <p>{menuItem.ingredients}</p>
-                {menuItem.platter &&
-                  menuItem.platter.map((option) => <li>{option}</li>)}
-              </div>
-            ))}
-          </div>
-        ))}
-        <h1 className="text-secondary">End of Menu</h1>
-      </div>
+      <MenuArray menuObj={startersList} />
+      <MenuArray menuObj={mainMealsList} />
+      <MenuArray menuObj={dessertsList} />
+      <MenuArray menuObj={drinksList} />
+      <NestedMenuArray menuObj={sushiPlattersList} />
+      <MenuArray menuObj={sushiAddOnsList} />
     </div>
   );
 };
