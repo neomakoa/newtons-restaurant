@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import restaurantsList from "../../data/restaurantsList";
-import RestaurantMap from "../../components/RestaurantMap";
+import RestaurantMap from "../../components/Locations/RestaurantMap";
 import Button from "../../components/Button";
-import RestaurantDetails from "../../components/RestaurantDetails";
+import RestaurantDetails from "../../components/Locations/RestaurantDetails";
 
 const Locations = () => {
   const [area, setArea] = useState(0);
@@ -27,7 +27,7 @@ const Locations = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="locationImg"
+        className="bgHeroImg"
         style={{
           backgroundImage: `url(${restaurant.bg})`,
         }}

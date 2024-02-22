@@ -25,7 +25,7 @@ const Header = () => {
                 <a
                   className="nav-link active text-white"
                   aria-current="page"
-                  href="/#about-us"
+                  href="/aboutUs"
                 >
                   About Us
                 </a>
