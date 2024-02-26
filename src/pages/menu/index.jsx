@@ -1,12 +1,13 @@
 import React from "react";
-import MenuArray from "../../components/Menu/MenuArray";
+
+import MenuArray from "../../components/MenuArray";
+import NestedMenuArray from "../../components/NestedMenuArray";
 import drinksList from "../../data/menus/drinksList";
 import startersList from "../../data/menus/startersList";
 import mainMealsList from "../../data/menus/mainMealsList";
 import dessertsList from "../../data/menus/dessertsList";
 import sushiAddOnsList from "../../data/menus/sushiAddOnsList";
 import sushiPlattersList from "../../data/menus/sushiPlattersList";
-import NestedMenuArray from "../../components/Menu/NestedMenuArray";
 
 const Menu = () => {
   return (

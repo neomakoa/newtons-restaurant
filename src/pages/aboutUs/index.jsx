@@ -20,8 +20,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 bg-dark">
-          <p className="p-5 text-primary">
+        <div className="col-12 bg-dark text-primary p-5">
+          <p>
             At Newton's, we believe in the power of good food to bring people
             closer. Our chefs are passionate about crafting a diverse menu that
             caters to every palate, blending global flavors with locally sourced
@@ -48,9 +48,9 @@ const AboutUs = () => {
             intimate setting for celebrations and corporate gatherings alike.
             Let us tailor every detail to your desires, ensuring an
             unforgettable event that reflects your unique taste and style.
-            <br />
-            <hr />
-            <br />
+          </p>
+          <hr />
+          <p>
             At Newton's, dining isn't just about nourishment—it's about creating
             memories that linger long after the last bite. Join us, and let's
             savor the joys of exquisite cuisine, shared with those who matter

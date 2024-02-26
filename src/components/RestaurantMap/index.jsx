@@ -5,7 +5,7 @@ const mapKey = process.env.REACT_APP_MAP_API_KEY;
 
 const RestaurantMap = ({ center, position }) => {
   return (
-    <div>
+    <div className="gMap">
       <APIProvider apiKey={mapKey}>
         <div style={{ height: "350px", width: "100%" }}>
           <Map

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 import restaurantsList from "../../data/restaurantsList";
-import RestaurantMap from "../../components/Locations/RestaurantMap";
+import RestaurantMap from "../../components/RestaurantMap";
 import Button from "../../components/Button";
-import RestaurantDetails from "../../components/Locations/RestaurantDetails";
+import RestaurantDetails from "../../components/RestaurantDetails";
 
 const Locations = () => {
   const [area, setArea] = useState(0);
@@ -23,11 +22,9 @@ const Locations = () => {
           </Button>
         ))}
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="bgHeroImg"
+      
+      <div
+        className="bgHeroImg change"
         style={{
           backgroundImage: `url(${restaurant.bg})`,
         }}
@@ -35,7 +32,7 @@ const Locations = () => {
         <div className="display-1 text-center text-secondary">
           {restaurant.location}
         </div>
-      </motion.div>
+      </div>
 
       <div className="row bg-dark m-0">
         <div className="col-md-7 p-3">
